@@ -1,0 +1,146 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.head_bar{
+    position: fixed;
+    overflow: hidden;
+	z-index: 10;
+	height: 80px;
+    top: 0px;
+    display: block;
+    width: 100%; 
+	background: transparent;
+	padding: 18px;
+	-webkit-transition: all ease-out .5s;
+  -moz-transition: all ease-out .5s;
+  -o-transition: all ease-out .5s;
+  transition: all ease-out .5s;
+}
+
+.head_bar a, .head_bar ul li, .head_bar_links li a{
+    color: white;
+}
+.activehead {
+    background-color: rgb(55, 108, 255) !important;
+    position: fixed;
+	z-index: 10;
+	height: 75px;
+    display: block;
+    width: 100%; 
+	
+	padding: 18px;
+	-webkit-transition: all ease-out .5s;
+  -moz-transition: all ease-out .5s;
+  -o-transition: all ease-out .5s;
+  transition: all ease-out .5s;
+  }
+ 
+ .back_img{
+    position: relative;
+    height: 100vh;
+ }
+ .back_img img{
+    width: 100% !important;
+    height: 100vh;
+ }
+ 
+ .head_text{
+    position: absolute;
+    top: 20%;
+ }
+
+ header{
+    height:100vh !important;
+   
+    
+ }
+ .container-sec{
+    padding: 0% !important;
+ }
+ .nav_link_name li a:hover{
+    color: rgb(253, 150, 31) !important;
+ }
+.navbar-brand:hover {
+    color: white !important;
+}
+ .footer div{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+ }
+ .footer div a:hover{
+ 
+  color: rgb(153, 255, 233) !important;
+ }
+ .footer div a{
+    margin: 0px;
+ }
+.head_text .row{
+    display: flex;
+    align-items: flex-end;
+}
+
+.banner_img{
+ display: flex;
+ justify-content: end;
+}
+ .footer{
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+ }
+ .app_icon img {
+    height: 70px !important;
+    margin: 30px 0px;
+ }
+ .gap{
+    display: none;
+ }
+ @media (max-width:870px){
+
+    .banner_img{
+        
+                        top: calc(-60%);
+                       
+    }
+    .banner_img img{
+        height: auto !important;
+    }
+ }
+@media (max-width:768px){
+    .banner_img{
+        display: none;
+    }
+    .footer{
+        display: block;
+    }
+    .gap{
+        display: block;
+    }
+    
+}
+
+/* animation */
+.bottom_img{
+    width: 100%;
+    animation: zoom 4s ease-in-out;
+}
+
+/* @keyframes zoom{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}    */
+
+
+.middle-text{
+    display: flex;
+    align-items: center;
+}
