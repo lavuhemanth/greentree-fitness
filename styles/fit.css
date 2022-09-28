@@ -1,0 +1,253 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    -webkit-scrollbar :none
+}
+
+.head_bar{
+    position: fixed;
+    overflow: hidden;
+	z-index: 10;
+	height: 80px;
+    top: 0px;
+    display: block;
+    width: 100%; 
+	background: transparent;
+	padding: 18px;
+	-webkit-transition: all ease-out .5s;
+  -moz-transition: all ease-out .5s;
+  -o-transition: all ease-out .5s;
+  transition: all ease-out .5s;
+}
+
+.head_bar a, .head_bar ul li, .head_bar_links li a{
+    color: white;
+}
+.activehead {
+    background-color:rgb(19 36 83) !important;
+    position: fixed;
+	z-index: 10;
+	height: 75px;
+    display: block;
+    width: 100%; 
+	
+	padding: 18px;
+	-webkit-transition: all ease-out .5s;
+  -moz-transition: all ease-out .5s;
+  -o-transition: all ease-out .5s;
+  transition: all ease-out .5s;
+  }
+ 
+ .back_img{
+    position: relative;
+    height: 100vh;
+ }
+ .back_img img{
+    width: 100% !important;
+    height: 100vh;
+ }
+ 
+ .head_text{
+   margin-bottom: 10%;
+ }
+
+ /* header{
+    height:100vh !important;
+    background: url(./Animated\ Shape.svg);
+   
+    
+ } */
+
+ .carouselMaterialStyle, .carousel-item {
+    height: 100vh;
+
+ }
+ .home-banner {
+    background: url(./Animated\ Shape.svg);
+    height: 100vh;
+ }
+ .container-sec{
+    padding: 0% !important;
+ }
+ .nav_link_name li a:hover{
+    color: rgb(253, 150, 31) !important;
+ }
+.navbar-brand:hover {
+    color: white !important;
+}
+ .footer div{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+ }
+ .footer div a:hover{
+ 
+  color: rgb(153, 255, 233) !important;
+ }
+ .footer div a{
+    margin: 0px;
+ }
+.head_text .row{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.banner_img{
+ display: flex;
+ justify-content: end;
+}
+ .footer{
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+ }
+ .app_icon img {
+    height: 70px !important;
+    margin: 30px 0px;
+ }
+ .gap{
+    display: none;
+ }
+ .description {
+    overflow-x: hidden;
+    overflow-x: hidden;
+ }
+
+ /* banner scrooling */
+ .first_banner{
+    display: flex; justify-content:center;
+   
+ }
+ .first_banner img{
+    width:32%;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 50%;
+    color: transparent;
+    max-width: 320px;
+    background-color: white;
+ }
+ .first_banner img{
+    width: 34%;
+    min-width: 180px;
+ }.h-500px {
+            height: 500px
+        }
+        /* The animation code */
+@keyframes example {
+  from {left: 0px;}
+  to {left: 10%;}
+}
+
+/* The element to apply the animation to */
+.slide-in-left {
+    position: relative;
+  animation-name: example;
+  left: 10%;
+  animation-duration: 2s;
+}
+
+@keyframes bottom-in {
+    from {top: 50px;}
+  to {top: 0px;}
+}
+.position-relative {
+    position: relative;
+}
+
+.slide-in-bottom {
+    position: relative;
+    top: 0px;
+    animation-name: bottom-in;
+     animation-duration: 2s;
+}
+ /* banner scroling */
+
+ .btn{
+    background-color: white;
+   
+ }
+ @media (max-width:870px){
+
+    .banner_img{
+        
+        top: calc(-60%);
+                       
+    }
+    .banner_img img{
+        height: auto !important;
+    }
+ }
+@media (max-width:768px){
+    .banner_img{
+        display: none;
+    }
+    .footer{
+        display: block;
+    }
+    .gap{
+        display: block;
+    }
+    
+}
+@media (min-width: 100px){
+.d-md-block {
+    display: block!important;
+}
+}
+
+/* animation */
+.bottom_img{
+    width: 100%;
+    animation: zoom 4s ease-in-out;
+}
+
+/* @keyframes zoom{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}    */
+
+
+.middle-text{
+    display: flex;
+    align-items: center;
+}
+
+.h-500px {
+            height: 500px
+        }
+        /* The animation code */
+@keyframes example {
+  from {left: 0px;}
+  to {left: 10%;}
+}
+
+/* The element to apply the animation to */
+.slide-in-left {
+    position: relative;
+  animation-name: example;
+  left: 10%;
+  animation-duration: 2s;
+}
+
+@keyframes bottom-in {
+    from {top: 50px;}
+  to {top: 0px;}
+}
+.position-relative {
+    position: relative;
+}
+
+.slide-in-bottom {
+    position: relative;
+    top: 0px;
+    animation-name: bottom-in;
+     animation-duration: 2s;
+}
