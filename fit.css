@@ -147,3 +147,45 @@
 .about{
     background: rgb(55, 108, 255) !important;;
 }
+/* featurs */
+
+.fetsection h1{
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+    text-decoration: underline;
+}
+.fetsection .nav-link{
+    color: aliceblue;
+    background-color: blue;
+    
+}
+
+    
+
+.fetsection .firstsec{
+    background-color: white;
+    border-radius: 20px;
+    border:1px solid red;
+    margin: 30px;
+
+    align-items: center;
+    
+}
+.fetsection p{
+    text-align: center;
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
+    color: rgb(10, 10, 80);
+    padding: 20px;
+}
+.fetsection .fimg img{
+    display: flex;
+    height: 665px;
+    
+}
+.fetsection .fblock{
+    display: flex;
+}
