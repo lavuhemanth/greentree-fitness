@@ -321,7 +321,23 @@ header {
 .about_us h1{
     text-decoration: underline;
 }
-
+.about_us .about_img{
+    display: flex;
+    align-items: center;
+}
+.about_us .about_img img{
+    width: 100%;
+    max-width:500px
+}
+.about_us .about_text{
+    text-align: justify;
+    word-break: break-all;
+}
+@media (max-width:992px){
+    .about_us .about_img img{
+        max-width: 100%;
+    }
+}
 /* about us close */
 
 /* together open */
