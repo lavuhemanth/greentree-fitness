@@ -1,7 +1,8 @@
 * {
     padding: 0px;
     margin: 0px;
-    -webkit-scrollbar: none
+    -webkit-scrollbar: none;
+    font-family:sans-serif;
 }
 
 header {
@@ -136,15 +137,62 @@ header {
     min-width: 180px;
 }
 
+.first_banner1 div{
+    width: 500px !important;
+}
+
+.first_banner1 div img{
+    width: 500px;
+}
+
 .head_text .text a {
     background-color: transparent;
     border: 1px solid white;
     color: white !important;
 }
 
+.head_text {
+    display: flex;
+    align-items: center;
+}
+
 .head_text .text a:hover {
     background-color: white;
     color: black !important;
+}
+
+@media (max-width:400px){
+    .first_banner1 div{
+        width: auto !important;
+    }
+    
+    .first_banner1 div img{
+        width: auto;
+    }
+    .head_text .text a{
+        padding:10px !important
+    }
+    .first_banner1 img{
+        margin-bottom: 5px !important;
+    }
+    .head_text p ,
+    .head_text h1,
+    .head_text{
+        margin: 0% !important;
+        padding: 0% !important;
+    }
+    .head_text{
+        text-align: justify;
+        word-break: break-all;
+        
+    }
+    .head_text .col-md-6{
+        padding: 0% !important;
+    }
+    .carousel-control-prev , 
+.carousel-control-next {
+    width:10px
+}
 }
 
 /* The animation code */
@@ -317,6 +365,9 @@ header {
     padding: 50px 0px 30px 0px;
     color: white;
     margin: 0px 0%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .about_us .about_img {
@@ -337,6 +388,11 @@ header {
 @media (max-width:992px) {
     .about_us .about_img img {
         max-width: 100%;
+    }
+    @media (max-width:400px){
+        .about_us{
+            height: auto !important;
+        }
     }
 }
 
@@ -413,11 +469,9 @@ header {
 .fetsection .firstsec {
     background-color: white;
     border-radius: 20px;
-    border: 1px solid red;
+    border: 1px solid rgb(0 42 71);
     margin: 30px 0px 30px 0px;
-
     align-items: center;
-
 }
 
 .fimg {
