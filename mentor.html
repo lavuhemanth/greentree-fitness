@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="mentor.css">
+    <link rel="stylesheet" href="./styles/mentor.css">
     <!-- CSS only -->
  <!-- CSS only -->
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -36,7 +36,7 @@ integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S8
         <div class="head_bar">
           <nav class="navbar navbar-expand-md navbar-light p-0 ">
               <div class="container-fluid headbar_logo">
-                  <a class="navbar-brand h1" href="./index.html"><img src="./images/WHite-512.svg" class="img-fluid logo_img"
+                  <a class="navbar-brand h1" href="./index.html"><img src="./images/logoi.svg" class="img-fluid logo_img"
                           alt="logo">
                       <p class="mb-0 text-white">GreenTree</p>
                   </a>
@@ -44,7 +44,7 @@ integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S8
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                           <ul class="navbar-nav nav_link_name text-white me-auto mb-2 mb-lg-0">
                               <li class="nav-item">
-                                  <a class="nav-link active  text-white mx-2" aria-current="page" href="#">About
+                                  <a class="nav-link active  text-white mx-2" aria-current="page" href="./index.html#about_us">About
                                       Us</a>
                               </li>
                              
@@ -61,38 +61,52 @@ integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S8
       <!-- headbar close -->
     </header>
   
-   
-  <div class="container form_container">
-    <div class="form_width">
-      <div id="form">
-  
-        <form class="row g-3">
-          <div class="col-md-12">
-            <label for="inputname" class="form-label" style="color:white;">Name</label>
-            <input type="name" class="form-control"  id="inputname">
-          </div>
-           
-          <div class="col-12">
-            <label for="inputcontact" class="form-label"style="color:white;">contact</label>
-            <input type="number" class="form-control" id="inputnumber">
-          </div>
-          <div class="col-md-12">
-            <label for="inputemail" class="form-label"style="color:white;">email</label>
-            <input type="mail" class="form-control"  id="inputmail">
-          </div>
-           
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label"style="color:white">Quira</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-             
-          <div class="col-12">
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
+    <!-- Mentor Body -->
+   <div class="container mt-150x" >
+        <div class="mentor-content">
+            <h1>Are you a mentor?</h1>
+            <p>As you would expect, gym instructors need to have skills centered around safe and effective gym usage.
+
+This includes knowing how to use and instruct people on every single gym machine. They should also know how to deliver safe and effective group exercise classes.
+
+Since gym instructors will be interacting with members all day, the best gym instructors tend to be outgoing, talkative, energetic, observant and hard-working.</p>
+        </div>
+        <div class="row mt-5 align-items-center">
+            <div class="col-lg-4 ">
+                <div class="p-5"><img src="./images/online_coach.svg" class="img-fluid px-200" alt="logo image"></div>
+            </div>
+            <div class="col-lg-8 form_container">
+              <div class="form_width">
+                <div id="form">
+                  <form class="row g-3" onsubmit="sendEmail(event); reset(); return false;" >
+                    <div class="col-md-12">
+                      <label for="inputname" class="form-label" style="color:white;">Name</label>
+                      <input type="name" class="form-control"  id="inputname">
+                    </div>
+                     
+                    <div class="col-12">
+                      <label for="inputcontact" class="form-label"style="color:white;">contact</label>
+                      <input type="number" class="form-control" id="inputnumber">
+                    </div>
+                    <div class="col-md-12">
+                      <label for="inputemail" class="form-label"style="color:white;">email</label>
+                      <input type="mail" class="form-control"  id="inputmail">
+                    </div>
+                     
+                    <div class="mb-3">
+                      <label for="inputquery" class="form-label"style="color:white">Quira</label>
+                      <textarea class="form-control" id="inputquery" rows="3" ></textarea>
+                    </div>
+                       
+                    <div class="col-12">
+                      <input type="submit" class="btn btn-primary" value="Submit">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
+   </div>
 
    <!-- end footer section open -->
    <footer class="footer footer_section">
@@ -105,7 +119,7 @@ integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S8
                             <h4>Powered By</h4>
                             <div class="footer_powered">
                                 <div class="footer_img text-center">
-                                    <img src="images/logo blue.svg" class="img-fluid"
+                                    <img src="images/logo_blue.svg" class="img-fluid"
                                         alt="logo">
                                     <p class="h5">Green Tree</p>
                                 </div>
@@ -166,18 +180,38 @@ integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S8
 </footer>
 <!-- footer close -->
 
-    
-      <script>
-        const header = document.querySelectorAll('.head_bar');
-        console.log(header)
-        window.onscroll = function () {
-            let top = window.scrollY;
-            if (top >= 100) {
-                header[0].classList.add('activehead');
-            } else {
-                header[0].classList.remove('activehead');
-            }
+    <script src="https://smtpjs.com/v3/smtp.js"></script>   
+    <script>
+    const header = document.querySelectorAll('.head_bar');
+    console.log(header)
+    window.onscroll = function () {
+        let top = window.scrollY;
+        if (top >= 100) {
+            header[0].classList.add('activehead');
+        } else {
+            header[0].classList.remove('activehead');
         }
+    }
+
+function sendEmail(event) {
+    event.preventDefault();
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "lhk.blue9@gmail.com",
+        Password : "7287805114",
+        To : 'hemanthkumar.lavu@gmail.com',
+        From : document.getElementById('inputmail').value,
+        Subject : "Mentor Query",
+        Body : `
+            Name: ${document.getElementById('inputname').value}
+            contact: ${document.getElementById('inputnumber').value}
+            email: ${document.getElementById('inputmail').value}
+            query: ${document.getElementById('inputquery').value}
+        `
+    }).then(
+    message => alert(message)
+    );
+}
     </script>
 </body>
 </html>
